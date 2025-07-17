@@ -1,0 +1,25 @@
+[project]
+name = "teta-nn-1-2025-predict-salary"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "catboost>=1.2.8",
+    "hydra-core>=1.3.2",
+    "numpy>=2.3.1",
+    "pandas>=2.3.1",
+    "scikit-learn>=1.7.0",
+    "seaborn>=0.13.2",
+]
+
+[dependency-groups]
+baseline = [
+    "lightning>=2.5.2",
+    "torch>=2.7.1",
+    "transformers[torch]>=4.53.2",
+]
+dev = [
+    "clearml>=2.0.2",
+    "ruff>=0.12.3",
+]
